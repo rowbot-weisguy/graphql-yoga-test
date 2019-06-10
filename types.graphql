@@ -1,0 +1,14 @@
+type Query {
+  hello(name: String): String!
+  heroes: [Hero!]!
+  matches(number: Int): [Match!]!
+}
+
+type Hero {
+  id: ID!
+  name: String!
+}
+
+type Match {
+  id: ID!
+}
